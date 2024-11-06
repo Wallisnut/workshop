@@ -27,7 +27,7 @@ public class Main {
     @Column(name = "displayname_en" , nullable = false)
     private String displayname_en;
 
-    @Column(name = "email", nullable = false, unique = true)
+    @Column(name = "email", nullable = false, unique = false)
     private String email;
 
     @Column(name = "faculty",nullable = false)
