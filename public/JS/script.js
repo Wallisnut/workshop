@@ -75,11 +75,14 @@ function submitLogin(event) {
       document.getElementById('d').innerHTML = '';
     })
       form.reset();
-    }else {
-      alert("Error: ไม่สามารถ login ได้สำเร็จ");
     }
+      
   })
-    .catch((error) => {console.error("Error:", error); form.reset();});
+    .catch((error) => {console.error("Error:", error); 
+      alert("Error: ไม่สามารถ login ได้สำเร็จ");
+      form.reset();
+      
+    });
 
 }
 document.getElementById("toggle-password").addEventListener("click", function() {
